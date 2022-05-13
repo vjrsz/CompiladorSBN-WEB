@@ -8,6 +8,9 @@
 </head>
 <body>
 	<div class="card">
+		<div class="card-2 title">
+			<h1>Compilador SBN</h1>
+		</div>
 		<div class="card-2" id="vars">
 			<div class="btns">
 				<button onclick="addVars()" >Adiconar Variavel</button>
@@ -30,8 +33,10 @@
 			<div class="btns">
 				<button onclick="execute()">Executar</button>
 			</div>
-			<div id="print">
-				<span>Variaveis</span>
+			<div class="print">
+				<h1>Variaveis</h1>
+				<table id="print">
+				</table>
 			</div>
 		</div>
 	</div>
@@ -149,9 +154,15 @@
 			printDiv = document.getElementById("print")
 			keys = Object.keys(vars)
 			for (var i = 0; i < keys.length; i++) {
-				var span = document.createElement("span")
-				span.innerHTML = keys[i] + "=" + vars[keys[i]]
-				printDiv.append(span)
+				var tr = document.createElement("tr")
+				var td1 = document.createElement("td")
+				var td2 = document.createElement("td")
+
+				td1.innerHTML =  keys[i] 
+				td2.innerHTML = vars[keys[i]]
+				tr.append(td1)
+				tr.append(td2)
+				printDiv.append(tr)
 			}
 		}
 

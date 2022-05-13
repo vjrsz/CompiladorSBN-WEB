@@ -12,11 +12,13 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-}
-p, span, button, input{
+
 	color: white;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 16px;
+}
+h1{
+	font-size: 30px;
 }
 body, html{
 	width: 100%;
@@ -34,12 +36,10 @@ body{
 .card{
 	display: flex;
 	flex-direction: column;
-	gap: 10%;
+	gap: 50px;
 	
 	width: 70%;
-	min-height: 80%;
 
-	
 	border: none;
 	border-radius: 10px;
 	padding: 25px;
@@ -66,6 +66,21 @@ body{
 		background-color: var(--third);
 		text-align: center;
 	}
+.title{
+	text-align: center;
+}
+.print{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 25px;
+}
+.print table td{
+	border : 1px white solid;
+	padding: 20px 25px;
+}
+
 .btns{
 	display: flex;
 	gap: 10px;
