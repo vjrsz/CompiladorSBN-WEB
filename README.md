@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./screenshots.png">
+    <img src="./screenshots_v1.png">
 </div>
 
 <h1 align="center">Compilador SBN</h1>
