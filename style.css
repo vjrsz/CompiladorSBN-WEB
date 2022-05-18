@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 :root{
 	--first: #2b2c30;
 	--second: #35313b;
@@ -7,18 +8,11 @@
 	--fourth: #613c4c;
 	--fifth: #ff1457;
 }
-
 *{
 	margin: 0px;
 	padding: 0px;
-	box-sizing: border-box;
 
-	color: white;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 16px;
-}
-h1{
-	font-size: 30px;
 }
 body, html{
 	width: 100%;
@@ -28,74 +22,4 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 50px 0px;
-
-	background: var(--first);
 }
-.card{
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
-	
-	width: 70%;
-
-	border: none;
-	border-radius: 10px;
-	padding: 25px;
-
-	background: var(--fourth);
-}
-.card-2{
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	width: 100%;
-}
-	.card-2 div{
-		display: flex;
-		gap: 5px;
-	}
-	.card-2 input{
-		outline: none;
-		width: 25%;
-		padding: 10px;
-		border: none;
-		border-radius: 5px;
-		box-shadow: 2px 2px 2px 1px var(--first);
-		background-color: var(--third);
-		text-align: center;
-	}
-.title{
-	text-align: center;
-}
-.print{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	gap: 25px;
-}
-.print table td{
-	border : 1px white solid;
-	padding: 20px 25px;
-}
-
-.btns{
-	display: flex;
-	gap: 10px;
-
-	width: 100%;
-}
-	.btns button{
-		outline: none;
-		width: 25%;
-		padding: 10px;
-		border: none;
-		border-radius: 5px;
-		box-shadow: 2px 2px 2px 1px var(--third);
-		background-color: var(--fifth);
-	}
-	.btns button:hover{
-		box-shadow: 1px 1px 1px 1px var(--fifth);
-		background-color: var(--third);
-	}
