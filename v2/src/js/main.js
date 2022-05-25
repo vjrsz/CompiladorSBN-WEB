@@ -16,6 +16,14 @@ const textCode = {
 		console.log(textCode.vars, textCode.code)
 		compile(textCode.vars, textCode.code)
 		console.log(value)
+
+		/*imprimindo no outro output*/
+		const out = document.getElementById("output")
+		out.innerHTML = "--- VARIAVÉIS --\n"
+		keyVars = Object.keys( textCode.vars )
+		keyVars.forEach((e) => {
+			out.innerHTML += `${e} = ${textCode.vars[e]}\n`
+		})
 	},
 	_initialize : (value) => {
 		initialize = {
@@ -36,7 +44,7 @@ const textCode = {
 			counter+=1
 		})
 		initialize.values = initialize.values.map((e)=>{
-		return e.split("=")
+			return e.split("=")
 		})
 		return initialize.values
 	},
@@ -63,7 +71,4 @@ const textCode = {
 		})
 		return start.values
 	}
-}
-function execute(){
-	textCode.execute()
 }

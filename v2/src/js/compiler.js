@@ -11,7 +11,6 @@ function sbn(a, b, para){
 	if(control.vars[a] < 0) control.linha_atual = para
 	else control.linha_atual += 1
 }
-
 function compile(vars, sbn_codigo){
 	control.vars = vars
 	control.linha_atual = 1
@@ -23,8 +22,8 @@ function compile(vars, sbn_codigo){
 		sbn(aux[0], aux[1], aux[2]*1)
 	}
 
-	console.log(vars)
+	/*console.log(vars)
 	console.log(sbn_codigo)
-	console.log(control)
+	console.log(control)*/
 	return vars
 }
