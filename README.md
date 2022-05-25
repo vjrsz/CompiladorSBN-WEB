@@ -7,7 +7,7 @@
     <h3>
         <a href="https://vjrsz.github.io/CompiladorSBN-WEB/v1/index.html" target="_blank">Live Version 1</a>
         <span>|</span>
-        <a href="https://vjrsz.github.io/CompiladorSBN-WEB/v2/index.html" target="_blank">Live Version 1</a>
+        <a href="https://vjrsz.github.io/CompiladorSBN-WEB/v2/index.html" target="_blank">Live Version 2</a>
     </h3>
 </div>
 <h2>Built With</h2>
