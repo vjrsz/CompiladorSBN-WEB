@@ -99,3 +99,18 @@ body{
 		box-shadow: 1px 1px 1px 1px var(--fifth);
 		background-color: var(--third);
 	}
+.modal-header, .modal-body, .modal-footer{
+	background: var(--fourth);
+}
+button{
+	color: white !important;
+	box-shadow: 2px 2px 2px 1px var(--third) !important;
+	background-color: var(--fifth) !important; 
+}
+button:hover{
+	box-shadow: 1px 1px 1px 1px var(--fifth) !important;
+	background-color: var(--third) !important;
+}
+.btn-alert-st{
+	border-radius: 50%;
+}
